@@ -20,7 +20,18 @@ fun main() {
     // TODO 6: Create var total = 0, then add amount to it
     //   Print: "Total: <total> CZK"
 
+    // TODO 7: Try different types:
+    //   val price: Double = 149.90
+    //   val bigId: Long = 9999999999
+    //   val initial: Char = 'L'
+    //   Print each one
+
     // BONUS: Calculate amount with 21% VAT
     //   val withVat = (amount * 1.21).toInt()
     //   Print: "With VAT: <withVat> CZK"
+
+    // BONUS: Try type conversion
+    //   val text = amount.toString()
+    //   val back = "200".toInt()
+    //   println("text: $text, back: $back")
 }

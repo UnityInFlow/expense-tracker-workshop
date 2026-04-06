@@ -6,6 +6,62 @@
 
 ---
 
+## Typy — přehled všech základních typů
+
+```kotlin
+// Číselné typy (celá čísla)
+val b: Byte    = 127              // 8-bit   (-128 .. 127)
+val s: Short   = 32000            // 16-bit  (-32768 .. 32767)
+val i: Int     = 2_000_000        // 32-bit  (±2.1 miliardy) — DEFAULT
+val l: Long    = 9_999_999_999L   // 64-bit  (±9.2 quintillion)
+
+// Desetinné typy
+val f: Float   = 3.14f            // 32-bit  (~7 platných číslic)
+val d: Double  = 3.14159265       // 64-bit  (~16 platných číslic) — DEFAULT
+
+// Ostatní typy
+val flag: Boolean = true           // pravda / nepravda
+val ch: Char      = 'A'           // jeden Unicode znak
+val text: String  = "Hello"       // řetězec (text)
+
+// Type inference — Kotlin odhaduje typy automaticky
+val x = 42         // Int
+val y = 3.14       // Double
+val z = "Kotlin"   // String
+val ok = true      // Boolean
+```
+
+### Konverze mezi typy
+
+```kotlin
+val i = 42
+val d = i.toDouble()       // 42.0
+val s = i.toString()       // "42"
+val l = i.toLong()         // 42L
+val back = "42".toInt()    // 42
+val safe = "abc".toIntOrNull()  // null (bezpečné parsování)
+
+// POZOR: Kotlin NEKONVERTUJE automaticky!
+// val d: Double = 42     // ❌ CHYBA
+// val d: Double = 42.0   // ✅ OK
+// val d: Double = 42.toDouble()  // ✅ OK
+```
+
+### Speciální zápisy
+
+```kotlin
+val million = 1_000_000        // podtržítka pro čitelnost
+val hex = 0xFF                 // hexadecimální
+val bin = 0b1010               // binární
+val longNum = 100L             // explicitně Long
+val floatNum = 3.14f           // explicitně Float
+```
+
+📖 https://kotlinlang.org/docs/basic-types.html
+📖 https://kotlinlang.org/docs/numbers.html
+
+---
+
 ## val / var — proměnné
 
 ```kotlin

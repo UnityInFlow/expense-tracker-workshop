@@ -22,6 +22,10 @@ Na konci lekce budeš umět vytisknout formátovaný výdaj jako:
 | `String` | Typ pro text |
 | `Int` | Typ pro celé číslo |
 | `Boolean` | Typ pro `true` / `false` |
+| `Double` | Typ pro desetinné číslo (64-bit) |
+| `Long` | Typ pro velké celé číslo (64-bit) |
+| `Char` | Typ pro jeden Unicode znak |
+| `.toInt()`, `.toDouble()`, `.toString()` | Konverze mezi typy |
 | `$variable` | String template — vloží hodnotu proměnné do textu |
 | `${expression}` | String template s výrazem |
 
@@ -48,9 +52,20 @@ Otevři `start/src/main/kotlin/workshop/Main.kt` a vyplň `// TODO` sekce:
 5. Vytiskni větu pomocí string template:  
    `"Expense: <description> costs <amount> CZK, paid: <paid>"`
 6. Vytvoř `var total = 0`, přičti k němu `amount` a vytiskni výsledek
+7. Vyzkoušej další typy — vytvoř proměnné s explicitními typy a vytiskni je:
+   - `val price: Double = 149.90`
+   - `val bigId: Long = 9999999999`
+   - `val initial: Char = 'L'`
 
-**Bonus:** Spočítej částku s DPH 21% a vytiskni ji.  
+**Bonus 1:** Spočítej částku s DPH 21% a vytiskni ji.  
 Hint: `(amount * 1.21).toInt()`
+
+**Bonus 2:** Vyzkoušej konverzi typů:
+```kotlin
+val text = amount.toString()
+val back = "200".toInt()
+println("text: $text, back: $back")
+```
 
 ---
 
@@ -68,7 +83,11 @@ Lunch
 false
 Expense: Lunch costs 150 CZK, paid: false
 Total: 150 CZK
+Price: 149.9 CZK
+Big ID: 9999999999
+Initial: L
 With VAT: 181 CZK
+text: 150, back: 200
 ```
 
 ---
