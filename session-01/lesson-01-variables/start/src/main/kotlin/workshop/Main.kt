@@ -1,0 +1,26 @@
+package workshop
+
+fun main() {
+    // === Lesson 01: Variables & Types ===
+
+    // TODO 1: Create val description (String) — name of your expense (e.g. "Lunch")
+
+    // TODO 2: Create val amount (Int) — amount in CZK (e.g. 150)
+
+    // TODO 3: Create val paid (Boolean) — was it paid? (e.g. false)
+
+    // TODO 4: Print each variable on separate line
+    //   println(description)
+    //   println(amount)
+    //   println(paid)
+
+    // TODO 5: Print sentence using string template:
+    //   "Expense: <description> costs <amount> CZK, paid: <paid>"
+
+    // TODO 6: Create var total = 0, then add amount to it
+    //   Print: "Total: <total> CZK"
+
+    // BONUS: Calculate amount with 21% VAT
+    //   val withVat = (amount * 1.21).toInt()
+    //   Print: "With VAT: <withVat> CZK"
+}
