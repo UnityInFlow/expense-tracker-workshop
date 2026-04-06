@@ -1,79 +1,62 @@
 # Setup Guide — Příprava prostředí
 ## Expense Tracker Workshop
 
-> ⏱ Odhadovaný čas: **15–20 minut**  
+> ⏱ Odhadovaný čas: **10–15 minut**  
 > Prosím proveď tento návod **před** workshopem — na místě budeme rovnou programovat.
 
 ---
 
-## Co nainstaluješ / What you will install
+## Co potřebuješ / What you need
 
-| Nástroj | Verze | K čemu |
+| Nástroj | Povinné? | K čemu |
 |---|---|---|
-| **JDK 21** | 21 LTS | Runtime pro Kotlin — bez toho kód nespustíme |
-| **IntelliJ IDEA Community** | nejnovější | Editor kódu (IDE) — zdarma |
-| **Git** | nejnovější | Stažení repozitáře |
+| **IntelliJ IDEA** | ✅ ano | Editor kódu (IDE) — základní verze je zdarma |
+| **JDK 24** | ❌ volitelné | IntelliJ ji stáhne za tebe automaticky |
+| **Git** | ❌ volitelné | Repozitář můžeš stáhnout i jako ZIP |
 
 ---
 
 ## 🪟 Windows
 
-### Krok 1 — JDK 21
-
-1. Jdi na https://adoptium.net/
-2. Klikni **"Latest LTS Release"** — ujisti se že je vybráno **Temurin 21**
-3. Stáhni `.msi` installer (Windows x64)
-4. Spusť installer → Next → Next → Finish
-5. Ověř v **Command Prompt** (Win+R → `cmd`):
-   ```
-   java -version
-   ```
-   Očekávaný výstup: `openjdk version "21.x.x"`
-
----
-
-### Krok 2 — IntelliJ IDEA Community Edition
+### Krok 1 — IntelliJ IDEA
 
 1. Jdi na https://www.jetbrains.com/idea/download/
-2. Scrolluj dolů na **"IntelliJ IDEA Community Edition"** — je zdarma
-3. Stáhni `.exe` installer
-4. Při instalaci zaškrtni:
+2. Stáhni `.exe` installer
+
+> ℹ️ Od verze 2025.3 existuje jen jedna verze IntelliJ IDEA (Community Edition už neexistuje). Po instalaci tě může vyzvat k 30denní trial Ultimate funkcí — to klidně přeskoč, základní (free) verze pro náš workshop stačí.
+
+3. Spusť installer → při instalaci zaškrtni:
    - ✅ **Add "Open Folder as Project"**
    - ✅ **Add launchers dir to the PATH**
-5. Spusť IntelliJ → při prvním startu zvol **"Do not import settings"**
-
-> ⚠️ Nevybírej **Ultimate** — ta je placená. Community Edition je zdarma a pro workshop plně dostačuje.
+4. Spusť IntelliJ → při prvním startu zvol **"Do not import settings"**
 
 ---
 
-### Krok 3 — Git
+### Krok 2 — Stažení repozitáře
 
-1. Jdi na https://git-scm.com/download/win
-2. Stáhni a nainstaluj — všechna výchozí nastavení jsou OK
-3. Ověř:
-   ```
-   git --version
-   ```
+**Varianta A — ZIP (pro začátečníky):**
 
----
+1. Jdi na https://github.com/UnityInFlow/expense-tracker-workshop
+2. Klikni zelené tlačítko **Code** → **Download ZIP**
+3. Rozbal ZIP na disk
 
-### Krok 4 — Klonování repozitáře
+**Varianta B — přes Git (pro pokročilé):**
 
-Otevři **Command Prompt** nebo **Git Bash**:
 ```bash
-git clone https://github.com/YOUR_ORG/expense-tracker-workshop.git
+git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 ```
 
 ---
 
-### Krok 5 — Otevření projektu
+### Krok 3 — Otevření projektu
 
 1. Spusť IntelliJ IDEA
 2. **File → Open** → vyber složku `session-01/lesson-01-variables/start/`
 3. Klikni **OK** — IntelliJ stáhne Gradle závislosti (progress bar dole, ~1 min)
-4. Otevři `src/main/kotlin/workshop/Main.kt`
-5. Klikni na zelený ▶ vedle `fun main()`
-6. V konzoli dole uvidíš výstup
+4. Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
+5. Otevři `src/main/kotlin/workshop/Main.kt`
+6. Klikni na zelený ▶ vedle `fun main()`
+7. V konzoli dole uvidíš výstup
 
 ✅ **Prostředí je připraveno!**
 
@@ -81,60 +64,49 @@ git clone https://github.com/YOUR_ORG/expense-tracker-workshop.git
 
 ## 🍎 macOS
 
-### Krok 1 — JDK 21
-
-**Možnost A — Homebrew (doporučeno):**
-```bash
-brew install --cask temurin@21
-```
-
-**Možnost B — ruční instalace:**
-1. Jdi na https://adoptium.net/
-2. Stáhni **Temurin 21** → macOS → `.pkg`
-3. Spusť `.pkg` a projdi instalací
-
-Ověř:
-```bash
-java -version
-```
-
----
-
-### Krok 2 — IntelliJ IDEA Community
+### Krok 1 — IntelliJ IDEA
 
 **Možnost A — Homebrew:**
 ```bash
-brew install --cask intellij-idea-ce
+brew install --cask intellij-idea
 ```
 
 **Možnost B — ruční:**
 1. Jdi na https://www.jetbrains.com/idea/download/
-2. Stáhni **Community Edition** → macOS
+2. Stáhni `.dmg`
 3. Otevři `.dmg` → přetáhni do Applications
 
+> ℹ️ Od verze 2025.3 existuje jen jedna verze IntelliJ IDEA — základní (free) verze pro náš workshop stačí. Trial Ultimate funkcí klidně přeskoč.
+
 > ❓ Nevíš jaký máš procesor? Apple menu → "About This Mac" → Chip  
-> Apple Silicon (M1/M2/M3) → stáhni "Apple Silicon" verzi  
+> Apple Silicon (M1/M2/M3/M4) → stáhni "Apple Silicon" verzi  
 > Intel → stáhni "Intel" verzi
 
 ---
 
-### Krok 3 — Git
+### Krok 2 — Stažení repozitáře
 
-Git je na macOS často předinstalovaný:
+**Varianta A — ZIP (pro začátečníky):**
+
+1. Jdi na https://github.com/UnityInFlow/expense-tracker-workshop
+2. Klikni zelené tlačítko **Code** → **Download ZIP**
+3. Rozbal ZIP na disk
+
+**Varianta B — přes Git (pro pokročilé):**
+
+Git je na macOS často předinstalovaný (`git --version`). Pokud ne, macOS nabídne instalaci Xcode Command Line Tools — potvrď.
+
 ```bash
-git --version
+git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 ```
-Pokud ne, macOS nabídne instalaci Xcode Command Line Tools — potvrď.
 
 ---
 
-### Krok 4 — Klonování a otevření
-
-```bash
-git clone https://github.com/YOUR_ORG/expense-tracker-workshop.git
-```
+### Krok 3 — Otevření projektu
 
 V IntelliJ: **File → Open** → `session-01/lesson-01-variables/start/`
+
+Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
 
 ✅ **Prostředí je připraveno!**
 
@@ -143,36 +115,32 @@ V IntelliJ: **File → Open** → `session-01/lesson-01-variables/start/`
 ## 🐧 Linux (Ubuntu / Debian)
 
 ```bash
-# JDK 21
-sudo apt-get update
-sudo apt-get install temurin-21-jdk
-
-# Git
-sudo apt-get install git
-
 # IntelliJ přes Snap
-sudo snap install intellij-idea-community --classic
-
-# Ověření
-java -version
-git --version
+sudo snap install intellij-idea --classic
 ```
 
-Klonování:
+Stažení repozitáře:
+
+**Varianta A — ZIP:** stáhni z https://github.com/UnityInFlow/expense-tracker-workshop (Code → Download ZIP)
+
+**Varianta B — Git:**
 ```bash
-git clone https://github.com/YOUR_ORG/expense-tracker-workshop.git
+sudo apt-get install git
+git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 ```
+
+V IntelliJ: **File → Open** → `session-01/lesson-01-variables/start/`
+
+Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
 
 ---
 
 ## ✅ Checklist před workshopem
 
 ```
-[ ] java -version  →  openjdk version "21.x.x"
-[ ] git --version  →  git version 2.x.x
-[ ] IntelliJ IDEA Community spuštěna
-[ ] Repozitář naklonován
-[ ] lesson-01-variables/start/ otevřena v IntelliJ
+[ ] IntelliJ IDEA nainstalována a spuštěna
+[ ] Repozitář stažen (ZIP nebo git clone)
+[ ] session-01/lesson-01-variables/start/ otevřena v IntelliJ
 [ ] Main.kt nalezena a spustitelná (zelené ▶ tlačítko)
 ```
 
@@ -180,28 +148,11 @@ git clone https://github.com/YOUR_ORG/expense-tracker-workshop.git
 
 ## 🛠 Časté problémy / Common Issues
 
-### "java is not recognized" (Windows)
-
-Java se nepřidala do PATH. Řešení:
-1. Start menu → hledej "Environment Variables"
-2. System Variables → `Path` → Edit → New
-3. Přidej: `C:\Program Files\Eclipse Adoptium\jdk-21.x.x\bin`
-4. Restartuj Command Prompt
-
-📖 https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux
-
----
-
 ### IntelliJ nezná JDK — "No JDK configured"
 
 1. **File → Project Structure** (Ctrl+Alt+Shift+S)
-2. **SDK → + → Add JDK**
-3. Naviguj do složky JDK:
-   - Windows: `C:\Program Files\Eclipse Adoptium\jdk-21.x.x`
-   - macOS: `/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home`
-   - Linux: `/usr/lib/jvm/temurin-21`
-
-📖 https://www.jetbrains.com/help/idea/sdk.html
+2. **SDKs → + → Download JDK**
+3. Vyber verzi **24** → libovolný vendor (např. Temurin)
 
 ---
 
@@ -216,14 +167,30 @@ Pokud selže kvůli proxy/firewallu — napiš nám před workshopem.
 
 ---
 
+### Chci mít Javu i v terminálu (volitelné)
+
+IntelliJ stáhne JDK jen pro sebe. Pokud chceš `java` i v příkazové řádce:
+
+**macOS / Linux:**
+```bash
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 24-tem
+```
+
+**Windows:**
+1. Stáhni z https://adoptium.net/temurin/releases/?version=24
+2. Spusť installer
+3. Ověř: `java -version`
+
+---
+
 ## 📚 Užitečné odkazy
 
 | | URL |
 |---|---|
-| Eclipse Temurin JDK 21 | https://adoptium.net/ |
-| IntelliJ IDEA Community | https://www.jetbrains.com/idea/download/ |
-| Git | https://git-scm.com/downloads |
+| IntelliJ IDEA | https://www.jetbrains.com/idea/download/ |
 | Kotlin Playground (záloha bez instalace) | https://play.kotlinlang.org |
-| Repozitář workshopu | https://github.com/YOUR_ORG/expense-tracker-workshop |
+| Repozitář workshopu | https://github.com/UnityInFlow/expense-tracker-workshop |
 
-> 💬 Problém s instalací? Napiš nám na [email] nebo otevři issue v repozitáři.
+> 💬 Problém s instalací? Otevři issue v repozitáři.
