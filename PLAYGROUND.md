@@ -2,6 +2,9 @@
 
 > Všechna cvičení z workshopu přímo v prohlížeči — bez instalace.
 > Klikni na odkaz, uprav kód a stiskni **Run**.
+>
+> **Poznámka:** V IntelliJ je kód rozdělený do více souborů (`Expense.kt`, `ExpenseService.kt`, `Main.kt`).
+> V Playground je vše v jednom souboru — funguje to stejně, jen je to přehlednější pro procvičení v prohlížeči.
 
 ---
 
