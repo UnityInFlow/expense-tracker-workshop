@@ -58,7 +58,7 @@ data class Expense(
 
 ## Zadání / Exercises
 
-Otevři `start/Main.kt` a vyřeš:
+Otevři `Expense.kt` — definuj data class. Pak `Main.kt` — vyplň TODO.
 
 1. Definuj `data class Expense` s poli: `id` (Int), `description` (String), `amount` (Int), `date` (String)
 

@@ -61,7 +61,7 @@ V Kotlinu:
 
 ## Zadání / Exercises
 
-Otevři `start/Main.kt`:
+`Expense.kt` je již hotová. Otevři `Main.kt` a vyplň TODO:
 
 1. Přidej 4 výdaje do `database` pomocí `database[id] = Expense(...)`
 

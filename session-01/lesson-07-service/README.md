@@ -47,7 +47,7 @@ Na konci lekce budeš mít kompletní `ExpenseService` — to samé co dostaneš
 
 ## Zadání / Exercises
 
-Otevři `start/Main.kt` — `ExpenseService` má připravené prázdné metody s `TODO`.
+`Expense.kt` je již hotová. Otevři `ExpenseService.kt` — implementuj metody. Pak `Main.kt` — otestuj service.
 
 Implementuj:
 

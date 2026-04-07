@@ -39,7 +39,7 @@ Na konci lekce budeš umět iterovat, filtrovat a počítat součty přes seznam
 
 ## Zadání / Exercises
 
-Otevři `start/Main.kt` — k dispozici máš předpřipravený seznam 5 výdajů.
+`Expense.kt` je již hotová. Otevři `Main.kt` a vyplň TODO — k dispozici máš předpřipravený seznam 5 výdajů.
 
 1. Vytiskni všechny výdaje pomocí `for` smyčky  
    Formát: `"ID <id>: <description> — <amount> CZK"`

@@ -29,7 +29,7 @@ Toto je výsledný stav Session 1 — základ pro Session 2.
 
 ## Zadání / Exercise
 
-Otevři `start/Main.kt`.
+Otevři `Expense.kt`, `ExpenseService.kt` a `Main.kt` — implementuj vše od nuly.
 
 Postav kompletní Expense Tracker od nuly:
 
