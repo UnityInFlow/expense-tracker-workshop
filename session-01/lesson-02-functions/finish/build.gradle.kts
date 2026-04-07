@@ -13,3 +13,7 @@ repositories {
 application {
     mainClass.set("workshop.MainKt")
 }
+
+kotlin {
+    jvmToolchain(24)
+}
