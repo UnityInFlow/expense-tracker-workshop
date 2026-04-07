@@ -1,12 +1,5 @@
 package workshop
 
-data class Expense(
-    val id: Int,
-    val description: String,
-    val amount: Int,
-    val date: String
-)
-
 fun main() {
     val lunch = Expense(id = 1, description = "Lunch", amount = 150, date = "2024-01-15")
     val coffee = Expense(id = 2, description = "Coffee", amount = 50, date = "2024-01-15")

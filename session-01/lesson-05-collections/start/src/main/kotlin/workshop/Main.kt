@@ -1,12 +1,5 @@
 package workshop
 
-data class Expense(
-    val id: Int,
-    val description: String,
-    val amount: Int,
-    val date: String
-)
-
 fun main() {
     val expenses = listOf(
         Expense(1, "Lunch", 150, "2024-01-15"),
