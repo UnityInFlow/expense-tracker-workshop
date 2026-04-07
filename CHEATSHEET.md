@@ -181,10 +181,6 @@ println(lunch.description)   // Lunch
 println(lunch.amount)        // 150
 println(lunch)               // Expense(id=1, description=Lunch, amount=150, date=2024-01-15)
 
-// Kopie s úpravou — originál se nezmění!
-val updated = lunch.copy(amount = 200)
-println(updated.amount)   // 200
-println(lunch.amount)     // 150 — beze změny
 ```
 
 📖 https://kotlinlang.org/docs/data-classes.html

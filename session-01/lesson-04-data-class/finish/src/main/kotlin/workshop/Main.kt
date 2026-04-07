@@ -10,9 +10,4 @@ fun main() {
     println("Expense #${metro.id}: ${metro.description} — ${metro.amount} CZK")
 
     println("Most expensive: ${lunch.description} (${lunch.amount} CZK)")
-
-    // BONUS
-    val updated = lunch.copy(amount = 200)
-    println("Updated: ${updated.amount} CZK")
-    println("Original: ${lunch.amount} CZK")
 }

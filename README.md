@@ -81,7 +81,7 @@ Cheatsheet se všemi konstrukty: [CHEATSHEET.md](./CHEATSHEET.md)
 | 01 | Proměnné a typy | `val`, `var`, `String`, `Int`, `Boolean`, string templates | 35 min |
 | 02 | Funkce | `fun`, parametry, návratové typy | 30 min |
 | 03 | Podmínky | `if`/`else`, `when` | 30 min |
-| 04 | Datový model | `data class`, instance, `.copy()` | 40 min |
+| 04 | Datový model | `data class`, instance, `toString()` | 40 min |
 | 05 | Kolekce | `listOf`, `for`, `forEach`, `filter`, `sumOf` | 25 min |
 | 06 | HashMap + null safety | `HashMap`, `?.`, `?:` | 40 min |
 | 07 | Service třída | `class`, `private`, zapouzdření | 50 min |

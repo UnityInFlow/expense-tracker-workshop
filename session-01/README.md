@@ -42,7 +42,7 @@ lesson-XX-topic/
 | 01 | [Variables](./lesson-01-variables/) | `val`, `var`, typy, string templates | Vytisknutý výdaj |
 | 02 | [Functions](./lesson-02-functions/) | `fun`, parametry, návratové typy | Formátovací funkce |
 | 03 | [Conditions](./lesson-03-conditions/) | `if`/`else`, `when` | Kategorizace výdajů |
-| 04 | [Data Class](./lesson-04-data-class/) | `data class`, instance, `.copy()` | Model `Expense` |
+| 04 | [Data Class](./lesson-04-data-class/) | `data class`, instance, `toString()` | Model `Expense` |
 | 05 | [Collections](./lesson-05-collections/) | `listOf`, `for`, `forEach`, `filter` | Práce se seznamem výdajů |
 | 06 | [HashMap](./lesson-06-hashmap/) | `HashMap`, `?.`, `?:` | In-memory databáze |
 | 07 | [Service](./lesson-07-service/) | `class`, `private` | `ExpenseService` s CRUD |

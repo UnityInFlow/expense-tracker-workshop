@@ -11,7 +11,4 @@ fun main() {
     // TODO 4: Find the most expensive and print:
     //   "Most expensive: <description> (<amount> CZK)"
 
-    // BONUS: Use .copy() to create updated expense with different amount
-    //   val updated = lunch.copy(amount = 200)
-    //   Print updated amount AND original to show original is unchanged
 }
