@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>workshop</groupId>
-    <artifactId>expense-tracker-workshop</artifactId>
+    <artifactId>session-01</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
 
@@ -18,22 +18,22 @@
     </properties>
 
     <modules>
-        <module>session-01/lesson-01-variables-start</module>
-        <module>session-01/lesson-01-variables-finish</module>
-        <module>session-01/lesson-02-functions-start</module>
-        <module>session-01/lesson-02-functions-finish</module>
-        <module>session-01/lesson-03-conditions-start</module>
-        <module>session-01/lesson-03-conditions-finish</module>
-        <module>session-01/lesson-04-data-class-start</module>
-        <module>session-01/lesson-04-data-class-finish</module>
-        <module>session-01/lesson-05-collections-start</module>
-        <module>session-01/lesson-05-collections-finish</module>
-        <module>session-01/lesson-06-hashmap-start</module>
-        <module>session-01/lesson-06-hashmap-finish</module>
-        <module>session-01/lesson-07-service-start</module>
-        <module>session-01/lesson-07-service-finish</module>
-        <module>session-01/lesson-08-final-start</module>
-        <module>session-01/lesson-08-final-finish</module>
+        <module>lesson-01-variables-start</module>
+        <module>lesson-01-variables-finish</module>
+        <module>lesson-02-functions-start</module>
+        <module>lesson-02-functions-finish</module>
+        <module>lesson-03-conditions-start</module>
+        <module>lesson-03-conditions-finish</module>
+        <module>lesson-04-data-class-start</module>
+        <module>lesson-04-data-class-finish</module>
+        <module>lesson-05-collections-start</module>
+        <module>lesson-05-collections-finish</module>
+        <module>lesson-06-hashmap-start</module>
+        <module>lesson-06-hashmap-finish</module>
+        <module>lesson-07-service-start</module>
+        <module>lesson-07-service-finish</module>
+        <module>lesson-08-final-start</module>
+        <module>lesson-08-final-finish</module>
     </modules>
 
     <dependencies>
