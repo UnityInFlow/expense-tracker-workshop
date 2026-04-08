@@ -61,7 +61,7 @@ V Kotlinu:
 
 ## Zadání / Exercises
 
-`Expense.kt` je již hotová. Otevři `Main.kt` a vyplň TODO:
+Modul: `lesson-06-hashmap-start` — `Expense.kt` je již hotová. Otevři `Main.kt` a vyplň TODO:
 
 1. Přidej 4 výdaje do `database` pomocí `database[id] = Expense(...)`
 
@@ -96,6 +96,13 @@ V Kotlinu:
 ---
 
 ## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-06-hashmap-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-06-hashmap-start:run
+```
 
 Očekávaný výstup:
 ```
@@ -154,4 +161,4 @@ database.values.toList()           // všechny hodnoty jako List
 
 ## Další lekce / Next lesson
 
-→ [Lesson 07 — Service Class](../lesson-07-service/)
+→ [Lesson 07 — Service Class](./lesson-07-README.md)

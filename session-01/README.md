@@ -17,21 +17,27 @@ Tohle je základ pro Session 2, kde stejnou logiku vystavíme jako HTTP REST API
 
 ## Jak lekce fungují / How lessons work
 
-Každá lekce má dvě složky:
+Celý `session-01/` je jeden Gradle multi-module projekt. Každá lekce má dva moduly:
 
 ```
-lesson-XX-topic/
-├── README.md     ← zadání, cíle, tipy — přečti si první
-├── start/        ← tady začínáš, soubor s TODO komentáři
-└── finish/       ← referenční řešení pokud se zasekneš
+session-01/                         ← otevři tuto složku v IntelliJ
+├── build.gradle.kts                ← společná konfigurace
+├── settings.gradle.kts             ← definice všech modulů
+├── gradlew                         ← Gradle wrapper
+├── lesson-XX-README.md             ← zadání, cíle, tipy — přečti si první
+├── lesson-XX-topic-start/          ← tady začínáš, soubor s TODO komentáři
+│   └── src/main/kotlin/workshop/
+└── lesson-XX-topic-finish/         ← referenční řešení pokud se zasekneš
+    └── src/main/kotlin/workshop/
 ```
 
 **Postup:**
-1. Přečti `README.md` lekce
-2. Otevři `start/` v IntelliJ (**File → Open → start/ složka**)
-3. Otevři `Main.kt` a vyplň `// TODO` sekce
-4. Spusť ▶ a ověř výstup
-5. Zasekl ses? Otevři `finish/`
+1. Otevři `session-01/` v IntelliJ (**File → Open**) — stačí jednou, na začátku
+2. Přečti `lesson-XX-README.md` aktuální lekce
+3. Rozbal modul `lesson-XX-topic-start` v levém panelu
+4. Otevři `Main.kt` a vyplň `// TODO` sekce
+5. Spusť ▶ a ověř výstup
+6. Zasekl ses? Podívej se do modulu `lesson-XX-topic-finish`
 
 ---
 
@@ -39,14 +45,14 @@ lesson-XX-topic/
 
 | # | Lekce | Nový koncept | Výstup |
 |---|---|---|---|
-| 01 | [Variables](./lesson-01-variables/) | `val`, `var`, typy, string templates | Vytisknutý výdaj |
-| 02 | [Functions](./lesson-02-functions/) | `fun`, parametry, návratové typy | Formátovací funkce |
-| 03 | [Conditions](./lesson-03-conditions/) | `if`/`else`, `when` | Kategorizace výdajů |
-| 04 | [Data Class](./lesson-04-data-class/) | `data class`, instance, `toString()` | Model `Expense` |
-| 05 | [Collections](./lesson-05-collections/) | `listOf`, `for`, `forEach`, `filter` | Práce se seznamem výdajů |
-| 06 | [HashMap](./lesson-06-hashmap/) | `HashMap`, `?.`, `?:` | In-memory databáze |
-| 07 | [Service](./lesson-07-service/) | `class`, `private` | `ExpenseService` s CRUD |
-| 08 | [Final](./lesson-08-final/) | Vše dohromady | Kompletní Expense Tracker |
+| 01 | [Variables](./lesson-01-README.md) | `val`, `var`, typy, string templates | Vytisknutý výdaj |
+| 02 | [Functions](./lesson-02-README.md) | `fun`, parametry, návratové typy | Formátovací funkce |
+| 03 | [Conditions](./lesson-03-README.md) | `if`/`else`, `when` | Kategorizace výdajů |
+| 04 | [Data Class](./lesson-04-README.md) | `data class`, instance, `toString()` | Model `Expense` |
+| 05 | [Collections](./lesson-05-README.md) | `listOf`, `for`, `forEach`, `filter` | Práce se seznamem výdajů |
+| 06 | [HashMap](./lesson-06-README.md) | `HashMap`, `?.`, `?:` | In-memory databáze |
+| 07 | [Service](./lesson-07-README.md) | `class`, `private` | `ExpenseService` s CRUD |
+| 08 | [Final](./lesson-08-README.md) | Vše dohromady | Kompletní Expense Tracker |
 
 ---
 

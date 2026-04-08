@@ -57,7 +57,7 @@ data class Expense(
 
 ## Zadání / Exercises
 
-Otevři `Expense.kt` — definuj data class. Pak `Main.kt` — vyplň TODO.
+Modul: `lesson-04-data-class-start` — otevři `Expense.kt` a definuj data class. Pak `Main.kt` — vyplň TODO.
 
 1. Definuj `data class Expense` s poli: `id` (Int), `description` (String), `amount` (Int), `date` (String)
 
@@ -84,6 +84,13 @@ Otevři `Expense.kt` — definuj data class. Pak `Main.kt` — vyplň TODO.
 ---
 
 ## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-04-data-class-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-04-data-class-start:run
+```
 
 Očekávaný výstup:
 ```
@@ -134,4 +141,4 @@ println(lunch)               // Expense(id=1, description=Lunch, amount=150, dat
 
 ## Další lekce / Next lesson
 
-→ [Lesson 05 — Collections](../lesson-05-collections/)
+→ [Lesson 05 — Collections](./lesson-05-README.md)

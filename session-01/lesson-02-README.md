@@ -35,7 +35,7 @@ Na konci lekce budeš mít sadu funkcí pro formátování a výpočet výdajů.
 
 ## Zadání / Exercises
 
-Otevři `start/Main.kt` a implementuj:
+Modul: `lesson-02-functions-start` — otevři `Main.kt` a implementuj:
 
 1. `formatExpense(description: String, amount: Int): String`  
    `formatExpense("Lunch", 150)` → `"Lunch: 150 CZK"`
@@ -68,6 +68,13 @@ Otevři `start/Main.kt` a implementuj:
 ---
 
 ## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-02-functions-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-02-functions-start:run
+```
 
 Očekávaný výstup:
 ```
@@ -119,4 +126,4 @@ fun nazev(parametr: Typ) {
 
 ## Další lekce / Next lesson
 
-→ [Lesson 03 — Conditions](../lesson-03-conditions/)
+→ [Lesson 03 — Conditions](./lesson-03-README.md)

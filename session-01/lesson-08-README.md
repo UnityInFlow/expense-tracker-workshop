@@ -29,7 +29,7 @@ Toto je výsledný stav Session 1 — základ pro Session 2.
 
 ## Zadání / Exercise
 
-Otevři `Expense.kt`, `ExpenseService.kt` a `Main.kt` — implementuj vše od nuly.
+Modul: `lesson-08-final-start` — otevři `Expense.kt`, `ExpenseService.kt` a `Main.kt` — implementuj vše od nuly.
 
 Postav kompletní Expense Tracker od nuly:
 
@@ -70,16 +70,32 @@ Count: 4
 
 ---
 
-## Finish složka / Finish folder
+## Finish modul / Finish module
 
-`finish/` obsahuje kompletní referenční řešení.  
-Otevři ho pokud se zasekneš, nebo pro inspiraci jak psát idiomatic Kotlin.
+Modul `lesson-08-final-finish` obsahuje kompletní referenční řešení.  
+Podívej se do něj pokud se zasekneš, nebo pro inspiraci jak psát idiomatic Kotlin.
+
+Spuštění referenčního řešení z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-08-final-finish:run
+```
+
+---
+
+## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-08-final-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-08-final-start:run
+```
 
 ---
 
 ## Bridge do Session 2 / Bridge to Session 2
 
-Po dokončení tohoto `start/` projektu máš základ pro Session 2.
+Po dokončení modulu `lesson-08-final-start` máš základ pro Session 2.
 
 **Co se stane v Session 2:**
 

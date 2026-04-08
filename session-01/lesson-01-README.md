@@ -43,7 +43,7 @@ Odpověď: **proměnné**.
 
 ## Zadání / Exercises
 
-Otevři `start/src/main/kotlin/workshop/Main.kt` a vyplň `// TODO` sekce:
+Modul: `lesson-01-variables-start` — otevři `src/main/kotlin/workshop/Main.kt` a vyplň `// TODO` sekce:
 
 1. Vytvoř `val` proměnnou `description` (String) — napiš libovolný výdaj
 2. Vytvoř `val` proměnnou `amount` (Int) — napiš částku v Kč
@@ -82,10 +82,17 @@ println("text: $text, back: $back")
 
 ## Spuštění / Running
 
-1. Otevři `start/` složku v IntelliJ (**File → Open**)
-2. Počkej na Gradle sync
-3. Otevři `Main.kt`
-4. Klikni na ▶ vedle `fun main()`
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-01-variables-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-01-variables-start:run
+```
+
+Referenční řešení spustíš pomocí:
+```bash
+./gradlew :lesson-01-variables-finish:run
+```
 
 Očekávaný výstup:
 ```
@@ -137,5 +144,5 @@ y = 10          // OK
 
 ## Další lekce / Next lesson
 
-→ [Lesson 02 — Functions](../lesson-02-functions/)  
+→ [Lesson 02 — Functions](./lesson-02-README.md)  
 V lekci 02 pojmenujeme opakované akce jako funkce.

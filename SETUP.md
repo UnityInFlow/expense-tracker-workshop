@@ -51,10 +51,10 @@ git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 ### Krok 3 — Otevření projektu
 
 1. Spusť IntelliJ IDEA
-2. **File → Open** → vyber složku `session-01/lesson-01-variables/start/`
+2. **File → Open** → vyber složku `session-01/`
 3. Klikni **OK** — IntelliJ stáhne Gradle závislosti (progress bar dole, ~1 min)
 4. Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
-5. Otevři `src/main/kotlin/workshop/Main.kt`
+5. V levém panelu rozbal modul `lesson-01-variables-start` → otevři `src/main/kotlin/workshop/Main.kt`
 6. Klikni na zelený ▶ vedle `fun main()`
 7. V konzoli dole uvidíš výstup
 
@@ -104,7 +104,7 @@ git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 
 ### Krok 3 — Otevření projektu
 
-V IntelliJ: **File → Open** → `session-01/lesson-01-variables/start/`
+V IntelliJ: **File → Open** → `session-01/`
 
 Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
 
@@ -129,7 +129,7 @@ sudo apt-get install git
 git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 ```
 
-V IntelliJ: **File → Open** → `session-01/lesson-01-variables/start/`
+V IntelliJ: **File → Open** → `session-01/`
 
 Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
 
@@ -140,8 +140,8 @@ Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze *
 ```
 [ ] IntelliJ IDEA nainstalována a spuštěna
 [ ] Repozitář stažen (ZIP nebo git clone)
-[ ] session-01/lesson-01-variables/start/ otevřena v IntelliJ
-[ ] Main.kt nalezena a spustitelná (zelené ▶ tlačítko)
+[ ] session-01/ otevřena v IntelliJ jako projekt
+[ ] Main.kt v modulu lesson-01-variables-start nalezena a spustitelná (zelené ▶ tlačítko)
 ```
 
 ---

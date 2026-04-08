@@ -23,24 +23,20 @@ expense-tracker-workshop/
 ├── CHEATSHEET.md                ← rychlý přehled Kotlin syntaxe / quick syntax reference
 │
 ├── session-01/                  ← Kotlin základy / Kotlin basics (4 hours)
+│   ├── build.gradle.kts         ← jeden Gradle projekt / one Gradle project
+│   ├── settings.gradle.kts      ← definice všech modulů / all modules defined here
+│   ├── pom.xml                  ← Maven alternativa / Maven alternative
+│   ├── gradlew                  ← Gradle wrapper
 │   ├── README.md                ← přehled session 1 / session 1 overview
-│   ├── lesson-01-variables/
-│   │   ├── README.md            ← zadání a cíle lekce / lesson brief & goals
-│   │   ├── start/               ← tady začínáš / you start here
-│   │   │   ├── build.gradle.kts
-│   │   │   ├── settings.gradle.kts
-│   │   │   └── src/main/kotlin/workshop/Main.kt   ← TODO cvičení
-│   │   └── finish/              ← referenční řešení / reference solution
-│   │       ├── build.gradle.kts
-│   │       ├── settings.gradle.kts
-│   │       └── src/main/kotlin/workshop/Main.kt   ← hotové řešení
-│   ├── lesson-02-functions/
-│   ├── lesson-03-conditions/
-│   ├── lesson-04-data-class/
-│   ├── lesson-05-collections/
-│   ├── lesson-06-hashmap/
-│   ├── lesson-07-service/
-│   └── lesson-08-final/         ← kompletní Expense Tracker / complete tracker
+│   ├── lesson-01-README.md      ← zadání a cíle lekce / lesson brief & goals
+│   ├── lesson-01-variables-start/    ← tady začínáš / you start here
+│   │   └── src/main/kotlin/workshop/Main.kt   ← TODO cvičení
+│   ├── lesson-01-variables-finish/   ← referenční řešení / reference solution
+│   │   └── src/main/kotlin/workshop/Main.kt   ← hotové řešení
+│   ├── lesson-02-functions-start/
+│   ├── lesson-02-functions-finish/
+│   ├── ...
+│   └── lesson-08-final-finish/  ← kompletní Expense Tracker / complete tracker
 │
 └── session-02/                  ← Spring Boot REST API (4 hours) — coming soon
 ```
@@ -56,17 +52,18 @@ expense-tracker-workshop/
    ```bash
    git clone https://github.com/YOUR_ORG/expense-tracker-workshop.git
    ```
-3. Otevři složku `session-01/lesson-01-variables/start/` v IntelliJ IDEA
+3. Otevři složku `session-01/` v IntelliJ IDEA
 
 ### Během workshopu / During the workshop
 
-1. Otevři `start/` složku aktuální lekce v IntelliJ (**File → Open**)
+1. Otevři složku `session-01/` v IntelliJ (**File → Open**) — jeden projekt pro všechny lekce
 2. Počkej na Gradle sync (progress bar dole)
-3. Otevři `src/main/kotlin/workshop/Main.kt`
-4. Vyplň sekce označené `// TODO`
-5. Spusť zeleným ▶ tlačítkem vedle `fun main()`
+3. Rozbal modul aktuální lekce (např. `lesson-01-variables-start`) v levém panelu
+4. Otevři `src/main/kotlin/workshop/Main.kt`
+5. Vyplň sekce označené `// TODO`
+6. Spusť zeleným ▶ tlačítkem vedle `fun main()`
 
-Zasekl ses? Otevři `finish/` složku stejné lekce — je tam kompletní řešení.
+Zasekl ses? Podívej se do `-finish` modulu stejné lekce — je tam kompletní řešení.
 
 ### After the workshop
 

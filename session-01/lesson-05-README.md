@@ -39,7 +39,7 @@ Na konci lekce budeš umět iterovat, filtrovat a počítat součty přes seznam
 
 ## Zadání / Exercises
 
-`Expense.kt` je již hotová. Otevři `Main.kt` a vyplň TODO — k dispozici máš předpřipravený seznam 5 výdajů.
+Modul: `lesson-05-collections-start` — `Expense.kt` je již hotová. Otevři `Main.kt` a vyplň TODO — k dispozici máš předpřipravený seznam 5 výdajů.
 
 1. Vytiskni všechny výdaje pomocí `for` smyčky  
    Formát: `"ID <id>: <description> — <amount> CZK"`
@@ -76,6 +76,13 @@ Na konci lekce budeš umět iterovat, filtrovat a počítat součty přes seznam
 ---
 
 ## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-05-collections-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-05-collections-start:run
+```
 
 Očekávaný výstup:
 ```
@@ -140,4 +147,4 @@ expenses.maxByOrNull { it.amount }           // Expense(Lunch)
 
 ## Další lekce / Next lesson
 
-→ [Lesson 06 — HashMap](../lesson-06-hashmap/)
+→ [Lesson 06 — HashMap](./lesson-06-README.md)

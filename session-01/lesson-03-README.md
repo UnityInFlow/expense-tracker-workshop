@@ -35,7 +35,7 @@ Na konci lekce budeš umět kategorizovat výdaj podle výše částky.
 
 ## Zadání / Exercises
 
-Otevři `start/Main.kt` a implementuj:
+Modul: `lesson-03-conditions-start` — otevři `Main.kt` a implementuj:
 
 1. `label(amount: Int): String` pomocí `if/else`  
    `amount > 100` → `"expensive"`, jinak → `"cheap"`
@@ -67,6 +67,13 @@ Otevři `start/Main.kt` a implementuj:
 ---
 
 ## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-03-conditions-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-03-conditions-start:run
+```
 
 Očekávaný výstup:
 ```
@@ -132,4 +139,4 @@ val result = when (day) {
 
 ## Další lekce / Next lesson
 
-→ [Lesson 04 — Data Class](../lesson-04-data-class/)
+→ [Lesson 04 — Data Class](./lesson-04-README.md)

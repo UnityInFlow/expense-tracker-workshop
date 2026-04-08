@@ -47,7 +47,7 @@ Na konci lekce budeš mít kompletní `ExpenseService` — to samé co dostaneš
 
 ## Zadání / Exercises
 
-`Expense.kt` je již hotová. Otevři `ExpenseService.kt` — implementuj metody. Pak `Main.kt` — otestuj service.
+Modul: `lesson-07-service-start` — `Expense.kt` je již hotová. Otevři `ExpenseService.kt` — implementuj metody. Pak `Main.kt` — otestuj service.
 
 Implementuj:
 
@@ -90,6 +90,13 @@ Implementuj:
 ---
 
 ## Spuštění / Running
+
+V IntelliJ klikni na ▶ vedle `fun main()` v modulu `lesson-07-service-start`.
+
+Alternativně z terminálu (ze složky `session-01/`):
+```bash
+./gradlew :lesson-07-service-start:run
+```
 
 Očekávaný výstup:
 ```
@@ -189,4 +196,4 @@ service.add("Lunch", 150)
 
 ## Další lekce / Next lesson
 
-→ [Lesson 08 — Final](../lesson-08-final/) — Vše dohromady
+→ [Lesson 08 — Final](./lesson-08-README.md) — Vše dohromady
