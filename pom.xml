@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>workshop</groupId>
+    <artifactId>expense-tracker-workshop</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <kotlin.version>2.0.21</kotlin.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <main.class>workshop.MainKt</main.class>
+    </properties>
+
+    <modules>
+        <module>session-01/lesson-01-variables-start</module>
+        <module>session-01/lesson-01-variables-finish</module>
+        <module>session-01/lesson-02-functions-start</module>
+        <module>session-01/lesson-02-functions-finish</module>
+        <module>session-01/lesson-03-conditions-start</module>
+        <module>session-01/lesson-03-conditions-finish</module>
+        <module>session-01/lesson-04-data-class-start</module>
+        <module>session-01/lesson-04-data-class-finish</module>
+        <module>session-01/lesson-05-collections-start</module>
+        <module>session-01/lesson-05-collections-finish</module>
+        <module>session-01/lesson-06-hashmap-start</module>
+        <module>session-01/lesson-06-hashmap-finish</module>
+        <module>session-01/lesson-07-service-start</module>
+        <module>session-01/lesson-07-service-finish</module>
+        <module>session-01/lesson-08-final-start</module>
+        <module>session-01/lesson-08-final-finish</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/main/kotlin</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <jvmTarget>21</jvmTarget>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>${main.class}</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
