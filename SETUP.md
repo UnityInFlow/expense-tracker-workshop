@@ -52,7 +52,7 @@ git clone https://github.com/UnityInFlow/expense-tracker-workshop.git
 
 1. Spusť IntelliJ IDEA
 2. **File → Open** → vyber složku `session-01/lesson-01-variables/start/`
-3. Klikni **OK** — IntelliJ stáhne Gradle závislosti (progress bar dole, ~1 min)
+3. Klikni **OK** — IntelliJ stáhne Maven závislosti (progress bar dole, ~1 min)
 4. Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze **24**
 5. Otevři `src/main/kotlin/workshop/Main.kt`
 6. Klikni na zelený ▶ vedle `fun main()`
@@ -156,12 +156,10 @@ Pokud tě IntelliJ vyzve k nastavení JDK → vyber **Download JDK** → verze *
 
 ---
 
-### Gradle sync selže
+### Maven sync selže
 
-```bash
-# Ve složce projektu spusť:
-./gradlew build
-```
+V IntelliJ otevři panel **Maven** (vpravo) a klikni na ikonu **Reload** (↻).
+Případně **File → Invalidate Caches → Invalidate and Restart**.
 
 Pokud selže kvůli proxy/firewallu — napiš nám před workshopem.
 

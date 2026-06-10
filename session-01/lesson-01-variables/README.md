@@ -83,7 +83,7 @@ println("text: $text, back: $back")
 ## Spuštění / Running
 
 1. Otevři `start/` složku v IntelliJ (**File → Open**)
-2. Počkej na Gradle sync
+2. Počkej na Maven sync
 3. Otevři `Main.kt`
 4. Klikni na ▶ vedle `fun main()`
 

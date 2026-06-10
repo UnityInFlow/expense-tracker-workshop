@@ -27,12 +27,10 @@ expense-tracker-workshop/
 │   ├── lesson-01-variables/
 │   │   ├── README.md            ← zadání a cíle lekce / lesson brief & goals
 │   │   ├── start/               ← tady začínáš / you start here
-│   │   │   ├── build.gradle.kts
-│   │   │   ├── settings.gradle.kts
+│   │   │   ├── pom.xml
 │   │   │   └── src/main/kotlin/workshop/Main.kt   ← TODO cvičení
 │   │   └── finish/              ← referenční řešení / reference solution
-│   │       ├── build.gradle.kts
-│   │       ├── settings.gradle.kts
+│   │       ├── pom.xml
 │   │       └── src/main/kotlin/workshop/Main.kt   ← hotové řešení
 │   ├── lesson-02-functions/
 │   ├── lesson-03-conditions/
@@ -61,7 +59,7 @@ expense-tracker-workshop/
 ### Během workshopu / During the workshop
 
 1. Otevři `start/` složku aktuální lekce v IntelliJ (**File → Open**)
-2. Počkej na Gradle sync (progress bar dole)
+2. Počkej na Maven sync (progress bar dole)
 3. Otevři `src/main/kotlin/workshop/Main.kt`
 4. Vyplň sekce označené `// TODO`
 5. Spusť zeleným ▶ tlačítkem vedle `fun main()`
